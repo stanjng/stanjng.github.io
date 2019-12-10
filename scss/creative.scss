@@ -1,11 +1,58 @@
 // Import custom variables (overrides Bootstrap default variables)
-@import "./variables.scss";
-
-// Import Bootstrap
-@import "bootstrap/scss/bootstrap.scss";
-
-// Import custom styles
+@import "./variables.scss"; // Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss"; // Import custom styles
 @import "./global.scss";
 @import "./navbar.scss";
 @import "./masthead.scss";
 @import "./portfolio.scss";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+.devicon {
+  font-size: 10rem;
+}
+
+.emphasis {
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+}
+
+.glide__arrow {
+  background-color: $primary;
+}
+
+.highlight {
+  color: $off-white;
+}
+
+.profile-pic {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+.project-heading {
+  background-color: $primary;
+  color: $portfolio;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+.project-info {
+  background-color: $portfolio;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.project-name {
+  color: $primary;
+  font-weight: 800;
+}
