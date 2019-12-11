@@ -8,8 +8,25 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
+#about {
+  background: url(../img/bg-about.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .devicon {
   font-size: 10rem;
+}
+
+.devicon-sm {
+  color: $light;
+  font-size: 2.65rem;
+}
+
+.disclaimer {
+  font-size: .75rem;
 }
 
 .emphasis {
@@ -18,12 +35,31 @@
   color: white;
 }
 
+.external-link-icon {
+  margin: 0 .25rem 0 .25rem;
+
+  &:hover {
+    color: $soft-stone;
+  }
+}
+
 .glide__arrow {
   background-color: $primary;
 }
 
 .highlight {
-  color: $off-white;
+  color: $light;
+}
+
+.img-link {
+  opacity: 0;
+  width:100%;
+  height:100%;
+}
+
+.portfolio-box {
+  width:100%;
+  height:auto !important;
 }
 
 .profile-pic {
@@ -37,22 +73,83 @@
   }
 }
 
+.project-bg-4 {
+  background: url(../img/portfolio/fullsize/project-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.project-bg-3 {
+  background: url(../img/portfolio/fullsize/project-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.project-bg-2 {
+  background: url(../img/portfolio/fullsize/project-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.project-bg-1 {
+  background: url(../img/portfolio/fullsize/project-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.project-description {
+  padding: 2.5rem;
+}
+
 .project-heading {
-  background-color: $primary;
-  color: $portfolio;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  background-color: $light;
+  color: $primary;
   padding-top: 1rem;
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
 }
 
 .project-info {
-  background-color: $portfolio;
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  background: url(../img/bg-portfolio.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .project-name {
-  color: $primary;
-  font-weight: 800;
+  background-color: $dark;
+  color: $light;
+}
+
+.project-text {
+  font-size: .8rem;
+}
+
+.se-tool {
+  background-color: white;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  box-shadow: -4px 3px 3px -1px rgba(0,0,0,1);
+  color: $dark;
+  display: inline-block;
+  font-weight: 100;
+  font-size: .65rem;
+  margin: .6rem .2rem 0 .2rem;
+  opacity: .9;
+  padding: .3rem .8rem .3rem .8rem;
+
+  &:hover {
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 1rem 0;
 }

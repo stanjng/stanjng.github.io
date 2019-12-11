@@ -86,7 +86,7 @@
           <hr class="divider light my-4">
           <p class="text-white-75 mb-3">
             I am a software engineer focusing on full stack Javascript development. I enjoy <span class="highlight">building</span> apps to <span class="highlight">elevate</span> people's lives. A few technologies I enjoy implementing include <span
-              class="emphasis">React</span>, <span class="emphasis">Boostrap</span>, and <span class="emphasis">Express.js</span>.
+              class="emphasis">React</span>, <span class="emphasis">Bootstrap</span>, and <span class="emphasis">Express.js</span>.
           </p>
           <p class="text-white-75 mb-3">
             I am excited to continue <span class="highlight">learning</span> more of <span class="emphasis">React's</span> capabilities and <span class="highlight">discovering</span> fun Javascript libraries and tools (e.g. <span
@@ -97,7 +97,8 @@
             To find balance in my life, I am a devoted yogi, a group fitness aficionado, a budding chef, and an explorer of Boston's best eats.
           </p>
           <p class="text-center">
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#skills">Skills</a>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#skills">View Skills</a>
+            <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Resume</a>
           </p>
         </div>
       </div>
@@ -244,9 +245,9 @@
 
   <!-- Portfolio Section -->
   <section id="portfolio">
-    <div class="container-fluid pr-0 pl-0 project-info">
-      <h2 class="text-center mt-0 text-primary">Portfolio</h2>
-      <hr class="divider">
+    <div class="container-fluid bg-dark pr-0 pl-0 project-info">
+      <h2 class="text-center mt-0 text-light">Portfolio</h2>
+      <hr class="divider light my-4">
 
       <!-- Project -->
       <div class="project-heading">
@@ -256,66 +257,118 @@
       </div>
 
       <div class="w-100"></div>
-      <div class="row no-gutters">
-        <div class="col-md-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/project-4.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/project-4.png" alt="">
+      <div class="row no-gutters h-100">
+        <div class="col-lg-6 project-bg-4 d-flex align-items-center">
+          <a class="portfolio-box" target="_blank" href="https://stanjng.github.io/studyo-frontend/#/">
+            <img class="img-link" src="img/portfolio/fullsize/project-4.png" alt="">
             <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Learn
+              </div>
               <div class="project-name">
                 STUDYO
               </div>
+              <i class="fas fa-external-link-square-alt text-light fa-lg mt-2"></i>
             </div>
           </a>
         </div>
 
-        <div class="col-md-6 text-center">
-          <h4 class="project-name">
-            STUDYO
-          </h4>
+        <div class="col-lg-6 text-center">
+          <div class="bg-dark text-light h-100 w-100 project-description">
+            <h4 class="project-name my-0">
+              STUDYO
+            </h4>
+            <hr class="divider light mb-2">
+            <ul>
+              <li class="se-tool">MongoDB</li>
+              <li class="se-tool">Express.js</li>
+              <li class="se-tool">React</li>
+              <li class="se-tool">Node.js</li>
+              <li class="se-tool">Axios</li>
+              <li class="se-tool">Sass</li>
+              <li class="se-tool">Bootstrap</li>
+            </ul>
+            <p class="project-text">
+              Learning tool that allows users to create study topics to post onto a community board. Each topic contains relevant questions and answers. Users must create an account or sign in to access CRUD functionalities. Full stack application built with an Express.js backend.
+            </p>
+            <p class="disclaimer">
+              * Do not use real credentials as this is a practice environment.
+            </p>
+              <a href="https://github.com/stanjng/studyo-frontend/">
+                <i class="devicon-github-plain-wordmark devicon-sm external-link-icon"></i>
+              </a>
+          </div>
         </div>
       </div>
 
       <!-- Project -->
       <div class="project-heading">
         <h4 class="text-center project-category">
-          <i class="fas fa-network-wired"></i> Connect
+          <i class="fas fa-user-graduate"></i> Connect
         </h4>
       </div>
-      <div class="w-100"></div>
 
-      <div class="row no-gutters">
-        <div class="col-md-6 text-center">
-          <h4 class="project-name">
-            BOS.EATS
-          </h4>
+      <div class="w-100"></div>
+      <div class="row no-gutters h-100">
+        <div class="col-lg-6 text-center">
+          <div class="bg-dark text-light h-100 w-100 project-description">
+            <h4 class="project-name my-0">
+              BOS.EATS
+            </h4>
+            <hr class="divider light mb-2">
+            <ul class="align-items-center">
+              <li class="se-tool">AWS</li>
+              <li class="se-tool">Multer</li>
+              <li class="se-tool">MongoDB</li>
+              <li class="se-tool">Express.js</li>
+              <li class="se-tool">Node.js</li>
+              <li class="se-tool">Ajax</li>
+              <li class="se-tool">Handlebars</li>
+              <li class="se-tool">HTML</li>
+              <li class="se-tool">Sass</li>
+              <li class="se-tool">Bootstrap</li>
+            </ul>
+            <p class="project-text">
+              Image storage service that allows users to upload photos from their Boston restaurant ventures. Images are uploaded utilizing Amazon AWS services. Full stack application built with an Express.js back end.
+            </p>
+            <p class="disclaimer">
+              * Do not use real credentials as this is a practice environment.
+            </p>
+              <a href="https://github.com/stanjng/studyo-frontend/">
+                <i class="devicon-github-plain-wordmark devicon-sm external-link-icon"></i>
+              </a>
+          </div>
         </div>
 
-        <div class="col-md-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/project-3.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/project-3.png" alt="">
-            <div class="portfolio-box-caption p-3">
+        <div class="col-lg-6 project-bg-3 d-flex align-items-center">
+          <a class="portfolio-box" target="_blank" href="https://stanjng.github.io/studyo-frontend/#/">
+            <img class="img-link" src="img/portfolio/fullsize/project-3.png" alt="">
+            <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Connect
               </div>
               <div class="project-name">
                 BOS.EATS
               </div>
+              <i class="fas fa-external-link-square-alt text-light fa-lg mt-2"></i>
             </div>
           </a>
         </div>
+
       </div>
 
       <!-- Project -->
       <div class="project-heading">
         <h4 class="text-center project-category">
-          <i class="fas fa-apple-alt"></i> Nourish
+          <i class="fas fa-user-graduate"></i> Nourish
         </h4>
       </div>
+
       <div class="w-100"></div>
-      <div class="row no-gutters">
-        <div class="col-md-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/project-2.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/project-2.png" alt="">
+      <div class="row no-gutters h-100">
+        <div class="col-lg-6 project-bg-2 d-flex align-items-center">
+          <a class="portfolio-box" target="_blank" href="https://stanjng.github.io/studyo-frontend/#/">
+            <img class="img-link" src="img/portfolio/fullsize/project-4.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Nourish
@@ -323,54 +376,108 @@
               <div class="project-name">
                 sMoo
               </div>
+              <i class="fas fa-external-link-square-alt text-light fa-lg mt-2"></i>
             </div>
           </a>
         </div>
 
-        <div class="col-md-6 text-center">
-          <h4 class="project-name">
-            sMoo
-          </h4>
+        <div class="col-lg-6 text-center">
+          <div class="bg-dark text-light h-100 w-100 project-description">
+            <h4 class="project-name my-0">
+              sMoo
+            </h4>
+            <hr class="divider light mb-2">
+            <ul>
+              <li class="se-tool">Ruby</li>
+              <li class="se-tool">Rails</li>
+              <li class="se-tool">JavaScript</li>
+              <li class="se-tool">Ajax</li>
+              <li class="se-tool">Handlebars</li>
+              <li class="se-tool">HTML</li>
+              <li class="se-tool">Sass</li>
+              <li class="se-tool">Bootstrap</li>
+            </ul>
+            <p class="project-text">
+              Smoothie recipe logging application that allows users save their favorite combinations of ingredients. Users must sign in to access functions. Full stack application built with a Ruby on Rails back end.
+            </p>
+            <p class="disclaimer">
+              * Do not use real credentials as this is a practice environment.
+            </p>
+              <a href="https://github.com/stanjng/studyo-frontend/">
+                <i class="devicon-github-plain-wordmark devicon-sm external-link-icon"></i>
+              </a>
+          </div>
         </div>
       </div>
 
       <!-- Project -->
       <div class="project-heading">
         <h4 class="text-center project-category">
-          <i class="far fa-laugh-beam"></i> Play
+          <i class="fas fa-user-graduate"></i> Play
         </h4>
       </div>
-      <div class="w-100"></div>
-      <div class="row no-gutters">
 
-        <div class="col-md-6 text-center">
-          <h4 class="project-name">
-            Tic-Tac-Toe
-          </h4>
+      <div class="w-100"></div>
+      <div class="row no-gutters h-100">
+        <div class="col-lg-6 text-center">
+          <div class="bg-dark text-light h-100 w-100 project-description">
+            <h4 class="project-name my-0">
+              TIC TAC TOE
+            </h4>
+            <hr class="divider light mb-2">
+            <ul>
+              <li class="se-tool">JavaScript</li>
+              <li class="se-tool">Ajax</li>
+              <li class="se-tool">HTML</li>
+              <li class="se-tool">Sass</li>
+              <li class="se-tool">Bootstrap</li>
+            </ul>
+            <p class="project-text">
+              Single page application of the classic Tic Tac Toe game. Users must be logged in to play and track their progress. Can play in single player mode.
+            </p>
+            <p class="disclaimer">
+              * Do not use real credentials as this is a practice environment.
+            </p>
+              <a href="https://github.com/stanjng/studyo-frontend/">
+                <i class="devicon-github-plain-wordmark devicon-sm external-link-icon"></i>
+              </a>
+          </div>
         </div>
 
-        <div class="col-md-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/project-1.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/project-1.png" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-name">
-                Tic-Tac-Toe
+        <div class="col-lg-6 project-bg-1 d-flex align-items-center">
+          <a class="portfolio-box" target="_blank" href="https://stanjng.github.io/studyo-frontend/#/">
+            <img class="img-link" src="img/portfolio/fullsize/project-3.png" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Play
               </div>
+              <div class="project-name">
+                TIC TAC TOE
+              </div>
+              <i class="fas fa-external-link-square-alt text-light fa-lg mt-2"></i>
             </div>
           </a>
         </div>
+
+      </div>
+
+      <!-- Portfolio End -->
+      <div class="project-heading">
+        <h4 class="text-center project-category">
+          <i class="fas fa-atom fa-spin"></i> More to come!
+        </h4>
       </div>
     </div>
 
   </section>
 
   <!-- Call to Action Section -->
-  <section class="page-section bg-dark text-white">
+  <!-- <section class="page-section bg-dark text-white">
     <div class="container text-center">
-      <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-      <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+      <h2 class="mb-4">Stan's Resume</h2>
+      <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Click Here to Download</a>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact Section -->
   <section class="page-section" id="contact">
@@ -379,18 +486,21 @@
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">Let's Get In Touch!</h2>
           <hr class="divider my-4">
-          <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+          <p class="text-muted mb-5">Want to know more about me? Contact Me Below!</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
           <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+1 (202) 555-0149</div>
+          <div>1 (646) 450-3883</div>
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+          <a class="d-block" href="mailto:stanjiang0@gmail.com">stanjiang0@gmail.com</a>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
+          <a class="d-block" href="https://linkedin.com/in/stanjng/">LinkedIn/StanJng</a>
         </div>
       </div>
     </div>
