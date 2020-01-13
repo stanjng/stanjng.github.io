@@ -17,40 +17,41 @@
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
-
 /*With Simple Caption*/
 .column#caption {
-	position: relative;
+  position: relative;
 }
-.column#caption .text {
-    color: $white;
-    text-shadow: 1px 1px 2px rgba(0,0,0,1);
-		position: absolute;
-    top: 95%;
-		transform: translate(-50%, -50%);
-		z-index: 10;
-    opacity: 0;
-    transition: all 0.5s ease;
-    font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-weight: 600;
-}
-.column#caption .text h1 {
-		margin: 0;
-		color: white;
-}
-.column#caption:hover .text {
-	opacity: 1;
 
+.column#caption .text {
+  color: $white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  position: absolute;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.5s ease;
+  font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 600;
 }
+
+.column#caption .text h1 {
+  margin: 0;
+  color: white;
+}
+
+.column#caption:hover .text {
+  opacity: 1;
+}
+
 .column#caption:hover img {
-	-webkit-filter: GrayScale(100%);
+  -webkit-filter: GrayScale(100%);
   -webkit-transform: scale(1.3);
-	transform: scale(1.3);
+  transform: scale(1.3);
   transition: all 0.9s ease;
 }
-
 /*GrayScale*/
 // .column#grayscale img {
 // 	-webkit-filter: grayscale(100%);
@@ -94,7 +95,8 @@ a:hover {
   color: $white;
 
   &:hover {
-    color: $soft-stone;
+    color: $primary;
+    text-decoration: none;
   }
 }
 
@@ -167,6 +169,11 @@ a:hover {
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 3px 3px 7px -1px rgba(0,0,0,1);
+
+  &:hover {
+    box-shadow: -4px 3px 7px -1px rgba(0,0,0,1);
+    transition: all 0.9s ease;
+  }
 }
 
 .project-th img {
@@ -196,4 +203,12 @@ a:hover {
 ul {
   padding: 0;
   margin: 0 0 1rem;
+}
+@media (max-width: 992px) {
+  .one {
+    order: 1;
+  }
+  .two {
+    order: 2;
+  }
 }

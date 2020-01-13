@@ -9902,7 +9902,7 @@ header.masthead h1 {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*With Simple Caption*/
@@ -9970,7 +9970,8 @@ a:hover {
 }
 
 .external-link-icon:hover {
-  color: #c6beb8;
+  color: #8D021F;
+  text-decoration: none;
 }
 
 .glide {
@@ -10045,6 +10046,11 @@ a:hover {
   box-shadow: 3px 3px 7px -1px black;
 }
 
+.project-th:hover {
+  box-shadow: -4px 3px 7px -1px black;
+  transition: all 0.9s ease;
+}
+
 .project-th img {
   width: auto;
   height: 100%;
@@ -10072,4 +10078,13 @@ a:hover {
 ul {
   padding: 0;
   margin: 0 0 1rem;
+}
+
+@media (max-width: 992px) {
+  .one {
+    order: 1;
+  }
+  .two {
+    order: 2;
+  }
 }
