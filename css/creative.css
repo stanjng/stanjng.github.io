@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Creative v5.1.8 (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
@@ -9897,7 +9897,51 @@ header.masthead h1 {
 }
 
 #about {
-  background: url(../img/bg-about.png) no-repeat center center fixed;
+  background: url("../img/bg-about.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*With Simple Caption*/
+.column#caption {
+  position: relative;
+}
+
+.column#caption .text {
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.5s ease;
+  font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 600;
+}
+
+.column#caption .text h1 {
+  margin: 0;
+  color: white;
+}
+
+.column#caption:hover .text {
+  opacity: 1;
+}
+
+.column#caption:hover img {
+  -webkit-filter: GrayScale(100%);
+  transform: scale(1.3);
+  transition: all 0.9s ease;
+}
+
+/*GrayScale*/
+.darker-color {
+  background-color: #22222a;
+  background: url("../img/bg-portfolio.png") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -9911,7 +9955,7 @@ header.masthead h1 {
 }
 
 .disclaimer {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .emphasis {
@@ -9921,11 +9965,17 @@ header.masthead h1 {
 }
 
 .external-link-icon {
-  margin: 0 .25rem 0 .25rem;
+  margin: 0 0.25rem;
+  color: #fff;
 }
 
 .external-link-icon:hover {
   color: #c6beb8;
+}
+
+.glide {
+  background: url("../img/bg-about.png") no-repeat center center fixed #22222a;
+  background-size: cover;
 }
 
 .glide__arrow {
@@ -9959,36 +10009,9 @@ header.masthead h1 {
   }
 }
 
-.project-bg-4 {
-  background: url(../img/portfolio/fullsize/project-4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.project-bg-3 {
-  background: url(../img/portfolio/fullsize/project-3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.project-bg-2 {
-  background: url(../img/portfolio/fullsize/project-2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.project-bg-1 {
-  background: url(../img/portfolio/fullsize/project-1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
 .project-description {
   padding: 2.5rem;
+  background-color: rbga(10, 10, 10, 0.9);
 }
 
 .project-heading {
@@ -9999,8 +10022,7 @@ header.masthead h1 {
 }
 
 .project-info {
-  padding-top: 8rem;
-  background: url(../img/bg-portfolio.png) no-repeat center center fixed;
+  background: url("../img/bg-portfolio.png") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -10010,21 +10032,36 @@ header.masthead h1 {
 }
 
 .project-text {
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+
+.project-th {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 3px 3px 7px -1px black;
+}
+
+.project-th img {
+  width: auto;
+  height: 100%;
+  margin-left: -70px;
 }
 
 .se-tool {
   background-color: white;
-  border: 1px solid #8D021F;
   border-radius: 4px;
-  box-shadow: -4px 3px 3px -1px black;
+  box-shadow: -2px 3px 5px -3px black;
   color: #343a40;
   display: inline-block;
   font-weight: 100;
-  font-size: .65rem;
-  margin: .6rem .2rem 0 .2rem;
-  opacity: .9;
-  padding: .3rem .8rem .3rem .8rem;
+  font-size: 0.65rem;
+  margin: 0.6rem 0.2rem 0;
+  opacity: 0.9;
+  padding: 0.3rem 0.8rem;
 }
 
 .se-tool:hover {
@@ -10034,5 +10071,5 @@ header.masthead h1 {
 
 ul {
   padding: 0;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
 }
